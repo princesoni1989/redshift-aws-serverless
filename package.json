@@ -1,0 +1,14 @@
+{
+  "name": "redshift",
+  "version": "1.0.0",
+  "main": "handler.js",
+  "scripts": {
+    "local": "serverless invoke local --function listInformation",
+    "deploy": "serverless deploy -v"
+  },
+  "author": "1989prince.soni@gmail.com",
+  "dependencies": {
+    "node-redshift": "^0.1.5"
+  },
+  "description": "Simple redshift Example"
+}

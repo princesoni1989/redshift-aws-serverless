@@ -1,0 +1,16 @@
+service: redshift
+
+provider:
+  name: aws
+  runtime: nodejs6.10
+  region: "us-east-1"
+  stage: dev
+
+functions:
+  listInformation:
+    handler: handler.listInformation
+    events:
+      - http:
+          method: get
+          path: lambda
+
