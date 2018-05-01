@@ -1,11 +1,11 @@
 const Redshift = require('node-redshift');
 
 var client = {
-  user: process.env.user || "prince",
-  database: process.env.database || "princeredshift",
-  password: process.env.password || "Prince123",
+  user: process.env.user || "user_name",
+  database: process.env.database || "database_name",
+  password: process.env.password || "password",
   port: process.env.port || 5439,
-  host: process.env.host || "prince-redshift.c3gh0ryxgww2.us-east-1.redshift.amazonaws.com",
+  host: process.env.host || "host_url",
 };
 
 function query(statement, options = []) {
